@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Cake Shop</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <a href="#" class="logo">Bakery</a>
+    <nav class="navbar">
+      <a href="#">Home</a>
+      <a href="#shop">Shop</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="icons">
+      <div id="menu-btn" class="fas fa-bars"></div>
+      <div id="search-btn" class="fas fa-search"></div>
+      <div id="cart-btn" class="fas fa-shopping-cart"></div>
+      <div id="login-btn" class="fas fa-user"></div>
+    </div>
+  </header>
+
+  <!-- Home Section -->
+  <section class="home" id="home">
+    <div class="slides-container">
+      <div class="slide active">
+        <div class="content">
+          <span>Order Cakes Online</span>
+          <h3>Upto 80% off</h3>
+          <a href="#" class="btn">Buy Now</a>
+        </div>
+        <div class="img">
+          <img src="https://media.geeksforgeeks.org/wp-content/uploads/20240301114007/image1_100.png" alt="Cake">
+        </div>
+      </div>
+
+      <div class="slide">
+        <div class="content">
+          <span>Customize Ordering</span>
+          <h3>Upto 80% off</h3>
+          <a href="#" class="btn">Buy Now</a>
+        </div>
+        <div class="img">
+          <img src="https://media.geeksforgeeks.org/wp-content/uploads/20240301113714/image12_100.png" alt="Custom Cake">
+        </div>
+      </div>
+
+      <div class="slide">
+        <div class="content">
+          <span>Fast Delivery</span>
+          <h3>Upto 80% off</h3>
+          <a href="#" class="btn">Buy Now</a>
+        </div>
+        <div class="img">
+          <img src="https://media.geeksforgeeks.org/wp-content/uploads/20240301114007/image1_100.png" alt="Fast Delivery Cake">
+        </div>
+      </div>
+    </div>
+
+    <div id="next-slide" class="fas fa-angle-right" onclick="next()"></div>
+    <div id="prev-slide" class="fas fa-angle-left" onclick="prev()"></div>
+  </section>
+
+  <!-- Banner Section -->
+  <section class="banner-container">
+    <div class="banner">
+      <img src="https://media.geeksforgeeks.org/wp-content/uploads/20240301113714/image12_100.png" alt="Velvet Cakes">
+      <div class="content">
+        <span>Velvet Cakes</span>
+        <h3>Upto 50% off</h3>
+        <a href="#" class="btn">Buy now</a>
+      </div>
+    </div>
+    <div class="banner">
+      <img src="https://media.geeksforgeeks.org/wp-content/uploads/20240301113805/image11_100.png" alt="Marble Cakes">
+      <div class="content">
+        <span>Marble Cakes</span>
+        <h3>Upto 60% off</h3>
+        <a href="#" class="btn">Buy now</a>
+      </div>
+    </div>
+    <div class="banner">
+      <img src="https://media.geeksforgeeks.org/wp-content/uploads/20240301113818/image10_100.png" alt="Chocolate Cakes">
+      <div class="content">
+        <span>Chocolate Cakes</span>
+        <h3>Upto 50% off</h3>
+        <a href="#" class="btn">Buy now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Category Section -->
+  <div class="heading"><h1>The Bakery</h1></div>
+
+  <section class="category">
+    <h1 class="title">All <span>categories</span> <a href="#">View all >></a></h1>
+    <div class="box-container">
+      <a href="#" class="box"><img src="https://media.geeksforgeeks.org/wp-content/uploads/20240301113952/image3_100.png" alt=""><h3>Fresh Cupcake</h3></a>
+      <a href="#" class="box"><img src="https://media.geeksforgeeks.org/wp-content/uploads/20240301113842/image8_100.png" alt=""><h3>Cookies</h3></a>
+      <a href="#" class="box"><img src="https://media.geeksforgeeks.org/wp-content/uploads/20240301113914/image6_100.png" alt=""><h3>Brown Bread</h3></a>
+      <a href="#" class="box"><img src="https://media.geeksforgeeks.org/wp-content/uploads/20240301113952/image3_100.png" alt=""><h3>Dark Chocolate</h3></a>
+      <a href="#" class="box"><img src="https://media.geeksforgeeks.org/wp-content/uploads/20240301113842/image8_100.png" alt=""><h3>Wheat</h3></a>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section class="products" id="shop">
+    <h1 class="title">Our <span>products</span> <a href="#">View all >></a></h1>
+    <div class="box-container">
+      <!-- Repeat this block for each product -->
+      <div class="box">
+        <div class="icons">
+          <a href="#" class="fas fa-shopping-cart"></a>
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+        </div>
+        <div class="img">
+          <img src="https://media.geeksforgeeks.org/wp-content/uploads/20240301114023/image_100.png" alt="Fruit Cake">
+        </div>
+        <div class="content">
+          <h3>Fruit Cakes</h3>
+          <div class="price">$25</div>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <div class="heading"><h1>About us</h1></div>
+
+  <section class="about" id="about">
+    <div class="img">
+      <img src="https://media.geeksforgeeks.org/wp-content/uploads/20240301113805/image11_100.png" alt="About Bakery">
+    </div>
+    <div class="content">
+      <h3>The Cake Shop</h3>
+      <p>Welcome to Bakery, where every confection tells a story of passion and dedication...</p>
+      <a href="#" class="btn">Read more</a>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <div class="heading"><h1>Contact us</h1></div>
+
+  <section class="contact" id="contact">
+    <div class="icons-container">
+      <div class="icons">
+        <i class="fas fa-phone"></i>
+        <h3>Contact number</h3>
+        <p>+xx xxxxxxxxxx</p>
+        <p>+xx xxxx xxx xxx</p>
+      </div>
+      <div class="icons">
+        <i class="fas fa-envelope"></i>
+        <h3>Email</h3>
+        <p>xxxxxxxxxxx@gmail.com</p>
+        <p>xyzabc@gmail.com</p>
+      </div>
+      <div class="icons">
+        <i class="fas fa-map-marker-alt"></i>
+        <h3>Address</h3>
+        <p>India</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <form action="">
+        <h3>Get in touch</h3>
+        <div class="inputBox">
+          <input type="text" placeholder="Enter your name" class="box">
+          <input type="email" placeholder="Enter your email" class="box">
+        </div>
+        <div class="inputBox">
+          <input type="number" placeholder="Enter your number" class="box">
+          <input type="text" placeholder="Enter your subject" class="box">
+        </div>
+        <textarea placeholder="Your message" cols="30" rows="10"></textarea>
+        <input type="submit" value="Send message" class="btn">
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <div class="space"></div>
+
+  <section class="footer">
+    <div class="box-container">
+      <div class="box">
+        <h3>Quick links</h3>
+        <a href="#"><i class="fas fa-arrow-right"></i> Home</a>
+        <a href="#"><i class="fas fa-arrow-right"></i> Shop</a>
+        <a href="#"><i class="fas fa-arrow-right"></i> About</a>
+        <a href="#"><i class="fas fa-arrow-right"></i> Review</a>
+        <a href="#"><i class="fas fa-arrow-right"></i> Blog</a>
+        <a href="#"><i class="fas fa-arrow-right"></i> Contact</a>
+      </div>
+      <div class="box">
+        <h3>Follow us</h3>
+        <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+        <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+        <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+        <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <a href="#"><i class="fab fa-pinterest"></i> Pinterest</a>
+      </div>
+      <div class="box">
+        <h3>Newsletter</h3>
+        <p>Don't miss any offer</p>
+        <form action="">
+          <input type="email" placeholder="Your email">
+          <input type="submit" value="Subscribe" class="btn">
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+
+  <script src="script.js" defer></script>
+
+</body>
+</html>
